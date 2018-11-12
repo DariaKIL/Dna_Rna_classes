@@ -20,7 +20,7 @@ class Dna(Rna):
             if base not in self.nucleotides:
                 raise ValueError('Warning! Enter only DNA sequence!')
 
-    def transcribe(self, reverse_complitment):
+    def transcribe(self, seq):
         replase = {'A': 'U', 'C': 'G', 'G': 'C', 'U': 'A'}
         bases = list(self.seq)
         bases = [replase[base] for base in bases]
