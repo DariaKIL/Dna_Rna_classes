@@ -4,7 +4,7 @@ class Rna:
         self.seq = seq.upper()
         for base in self.seq:
             if base not in self.nucleotides:
-                raise ValueError('Warning! Enter only DNA sequence!')
+                raise ValueError('Warning! Enter only RNA sequence!')
     def gc (self, seq):
         return (self.seq.count('C') + self.seq.count('G'))/len(seq)*100
     def reverse_complement(self, seq):
