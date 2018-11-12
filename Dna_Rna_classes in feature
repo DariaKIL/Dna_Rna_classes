@@ -14,7 +14,7 @@ class Rna:
         return ''.join(bases)
 class Dna(Rna):
     nucleotides = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A'}
-    def __init__(self):
+    def __init__(self, seq):
         self.seq = seq.upper()
         for base in self.seq:
             if base not in self.nucleotides:
