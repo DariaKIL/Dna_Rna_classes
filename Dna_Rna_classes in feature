@@ -21,7 +21,7 @@ class Dna(Rna):
                 raise ValueError('Warning! Enter only DNA sequence!')
 
     def transcribe(self, reverse_complitment):
-        replase = {'A': 'U', 'C': 'G', 'G': 'C', 'T': 'A'}
+        replase = {'A': 'U', 'C': 'G', 'G': 'C', 'U': 'A'}
         bases = list(self.seq)
         bases = [replase[base] for base in bases]
         return ''.join(bases)
